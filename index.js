@@ -1,14 +1,17 @@
-//VARIABLE GLOBALS: un problema. Raó: els xocs entre fitxers perquè tenen variables globals amb el mateix nom.
-
-$a =
-
-
-function (){
-    $a ="";
-    //Variables locals
+function hello(bool) {
+    // $name = "roger";
+    // console.log("Hola " + $name);
+    if(bool){
+        foo = "bar";
+        console.log(foo)
+    }else{
+        console.log(foo); 
+    }
 }
 
-console.log($a);//No funcionarà, està forma del seu àmbit.
+// console.log($name);
+
+hello(false);
 
 //JAVASCRIPT STRICT MODE: No l'activeu
 //SCOPE: ÂMBIT DE VIDA. Zona del codi on una variable té vida o sentit. Quan comença i quan s'acaba una variable
