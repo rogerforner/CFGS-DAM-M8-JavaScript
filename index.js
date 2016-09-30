@@ -1,28 +1,17 @@
+//VARIABLE GLOBALS: un problema. Raó: els xocs entre fitxers perquè tenen variables globals amb el mateix nom.
 
-//Això no es pot fer en php. HOYSTER. Primer carrega en memoria funcions i variables.
+$a =
 
-hola('roger');
 
-function hola($name) {
-    console.log('Hola'+$name);
+function (){
+    $a ="";
+    //Variables locals
 }
 
+console.log($a);//No funcionarà, està forma del seu àmbit.
 
-//
-// console.log("Hello world at external file");
-//
-// //alert('Hola mon!'); //Evitar utilitzar aquesta forma!
-//
-// $name= 'roger';
-//
-// //Windows: només en navegadors!!
-// window.alert(window.$name);
-
-//Objecte window : objecte per defecte en navegador = Namespace Global
-//Tothom depèn d'aquest objecte.
-
-// Scope d'una variable. Funció
-
+//JAVASCRIPT STRICT MODE: No l'activeu
+//SCOPE: ÂMBIT DE VIDA. Zona del codi on una variable té vida o sentit. Quan comença i quan s'acaba una variable
 
 
 
