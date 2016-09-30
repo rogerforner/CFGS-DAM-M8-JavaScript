@@ -1,23 +1,23 @@
+//NAMESPACES
+//DE MOMENT no tenim class {}
 
+// var myApp = [] -> Arrays
 
+//FRONTEND: Javascript
 
-function hello(bool) {
-    // $name = "roger";
-    // console.log("Hola " + $name);
-    if(bool){
-        var foo = "bar";
-        console.log(foo)
-    }else{
-        console.log(foo);
+//BACKEND: Java, PHP, JavaScript, Ruby, Python
+
+//JavaScript Object Notation aka JSON
+var Persons =[
+    {
+        'name'  :   'roger',
+        'sn1'   :   'Martinez',
+        'age'   :   25
+    },
+    {
+        'name'  :   'roger',
+        'sn1'   :   'Martinez',
+        'age'   :   25
     }
-}
 
-// console.log($name);
-
-hello(false);
-
-//JAVASCRIPT STRICT MODE: No l'activeu
-//SCOPE: ÂMBIT DE VIDA. Zona del codi on una variable té vida o sentit. Quan comença i quan s'acaba una variable
-
-
-
+];
