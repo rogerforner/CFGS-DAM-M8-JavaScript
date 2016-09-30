@@ -14,18 +14,35 @@
 
 //OLN
 
-var Person = {
-    name : "Sergi",
-    constructor: function(){
+// var Person = {
+//     name : "Sergi",
+//     constructor: function(){
+//
+//     },
+//     hello: function () {
+//         console.log('Hola ' + this.name);
+//     },
+//     bye :function(){
+//         return 'Bye bye ' + this.name;
+//     }
+// }; //No és una classe. És un objecte directament!!
+//
+// Person.hello();
+// console.log(Person.bye());
 
-    },
-    hello: function () {
-        console.log('Hola ' + this.name);
-    },
-    bye :function(){
-        return 'Bye bye ' + this.name;
+// The module pattern
+
+var Person = (function() {
+    var name = "Sergi";
+    var sn1 = "Tur";
+    return {
+        hello: function () {
+            console.log('Hola ' + name);
+        },
+        bye: function () {
+        return 'Bye bye ' + name;
+        }
     }
-}; //No és una classe. És un objecte directament!!
+})();
 
-Person.hello();
 console.log(Person.bye());
