@@ -1,29 +1,31 @@
-//NAMESPACES
-//DE MOMENT no tenim class {}
+// OOP: Object Oriented Programming
 
-// var myApp = [] -> Arrays
+//JSON
 
-//FRONTEND: Javascript
+// var Person = {
+//
+// };
+//
+// Person.name="Sergi";
+//
+// Person.hello = function() {
+//
+// };
 
-//BACKEND: Java, PHP, JavaScript, Ruby, Python
+//OLN
 
-//JavaScript Object Notation aka JSON
 var Person = {
-        'name'  :   'Sergi',
-        'sn1'   :   'Tur',
-        'age'   :   38
-};
+    name : "Sergi",
+    constructor: function(){
 
-//Namespaces
+    },
+    hello: function () {
+        console.log('Hola ' + this.name);
+    },
+    bye :function(){
+        return 'Bye bye ' + this.name;
+    }
+}; //No és una classe. És un objecte directament!!
 
-//Jquery $
-
-var myApp = {};
-
-myApp.name = 'roger';
-
-myApp.hello = function (){
-    console.log('Hola món');
-}
-
-myApp.hello();
+Person.hello();
+console.log(Person.bye());
