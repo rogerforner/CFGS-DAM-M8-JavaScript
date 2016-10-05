@@ -6,10 +6,26 @@
 
 //Javascript: functional programming
 
-function Persona() {
-    console.log('Creant una nova persona')
-} // function contructor
+// function Persona(name) {
+//     console.log('Creant una nova persona')
+//     this.name = name;
+//     this.sn1 ='Martinez';
+// } // function contructor
+//
+// var persona1 = new Persona('Xavier');
+// console.log(persona1);
 
-var persona1 = new Persona();
-var persona2 = new Persona();
+function persona() {
+   console.log('Creant una nova persona');
+     var this.name = 'roger';
+     var this.sn1 ='Martinez';
+};
 
+var persona1 = persona;
+
+persona1.bind(persona);
+
+console.log (persona1.name); // Així no funciona, necessita el new o el bind...
+
+//bind
+//per especificar a que fem referencia quan diem this
