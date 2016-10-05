@@ -19,6 +19,7 @@
 
 //Objecte Global en Node.js: Global
 
-document.getElementById("hello").innerHTML('Hola!');
+var hello = document.getElementById("hello");
+hello.innerHTML = "Hola!";
 
 
