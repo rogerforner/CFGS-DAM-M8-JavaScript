@@ -11,12 +11,31 @@ console.log(this); //this= Window o Global a node
 
 //this a javascript: objecte que invoca la funció on s'utilitza this
 
-var person = {
-  firstName : "Penelope",
-    lastName : "Barrymore",
-    showFullName:function () {
-        console.log(this.firstName + " " + this.lastName);
-    }
+// var person = {
+//   firstName : "Penelope",
+//     lastName : "Barrymore",
+//     showFullName:function () {
+//         console.log(this.firstName + " " + this.lastName);
+//     }
+// };
+//
+// person.showFullName()
+
+var FullName = function () {
+    console.log(this.firstName + " " + this.lastName);
 };
 
-person.showFullName()
+var name = "Penelope";
+
+firstName="Xavier";
+lastName="Cognom";
+
+var person = {
+    firstName : name,
+    lastName : "Barrymore",
+    showFullName: FullName
+};
+
+person.showFullName();
+
+FullName();
