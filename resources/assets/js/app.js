@@ -27,8 +27,8 @@ var FullName = function () {
 
 var name = "Penelope";
 
-firstName="Xavier";
-lastName="Cognom";
+// firstName="Xavier";
+// lastName="Cognom";
 
 var person = {
     firstName : name,
@@ -36,6 +36,12 @@ var person = {
     showFullName: FullName
 };
 
+var boundshowFullName = FullName.bind(person);
+
 person.showFullName();
 
 FullName();
+
+boundshowFullName();
+
+//EXPLICITS: dir a qui aplica el this. mètodes bind call apply
