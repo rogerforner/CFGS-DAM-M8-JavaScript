@@ -1,0 +1,30 @@
+{
+  "name": "tinkering-javascript",
+  "version": "1.0.0",
+  "description": "Tinkering JavaScript",
+  "main": "index.js",
+  "dependencies": {
+    "laravel-elixir": "^6.0.0-11"
+  },
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "laravel-elixir": "^6.0.0-11",
+    "gulp": "^3.9.1",
+    "laravel-elixir-browsersync-official": "^1.0.0",
+    "laravel-elixir-vue-2": "^0.2.0",
+    "laravel-elixir-webpack-official": "^1.0.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogerforner/tinkeringJavaScript.git"
+  },
+  "author": "Roger Forner Fabre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rogerforner/tinkeringJavaScript/issues"
+  },
+  "homepage": "https://github.com/rogerforner/tinkeringJavaScript#readme"
+}
